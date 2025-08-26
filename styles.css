@@ -6,6 +6,9 @@
   --accent: #24e08a;
 }
 * { box-sizing: border-box; }
+html, body {
+  overscroll-behavior-y: contain; /* Prevent pull-to-refresh */
+}
 body {
   margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
 }
@@ -39,3 +42,4 @@ body {
 .progress-bar {
   height: 100%; background: var(--accent); width: 0%; transition: width .25s ease;
 }
+
